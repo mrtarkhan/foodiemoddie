@@ -1,4 +1,4 @@
-package ir.drp.it.food.abstraction;
+package ir.drp.it.foodiemoodie.abstraction;
 
 public abstract class Assert {
 

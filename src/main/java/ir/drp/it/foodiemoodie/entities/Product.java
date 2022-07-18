@@ -1,19 +1,18 @@
-package ir.drp.it.food.models;
+package ir.drp.it.foodiemoodie.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity(name = "products")
-public class Product {
+public class Product extends BaseEntity{
 
-    @Id
-    @GeneratedValue
-    private int id;
+
+
+    @Column(length = 150)
     private String name;
+
     private int price;
 
-    public Product(int id, String name, int price) {
+    public Product(Long id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -32,7 +31,7 @@ public class Product {
         this.price = price;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 

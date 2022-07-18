@@ -1,4 +1,4 @@
-package ir.drp.it.food;
+package ir.drp.it.foodiemoodie;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

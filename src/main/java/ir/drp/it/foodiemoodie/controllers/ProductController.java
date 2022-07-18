@@ -1,7 +1,7 @@
-package ir.drp.it.food.controllers;
+package ir.drp.it.foodiemoodie.controllers;
 
-import ir.drp.it.food.models.Product;
-import ir.drp.it.food.repositories.ProductRepository;
+import ir.drp.it.foodiemoodie.entities.Product;
+import ir.drp.it.foodiemoodie.repositories.ProductRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

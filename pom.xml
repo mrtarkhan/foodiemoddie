@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ir.drp.it</groupId>
-	<artifactId>food</artifactId>
+	<artifactId>foodiemoodie</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>food</name>
 	<description>Food Reservation for personnel</description>

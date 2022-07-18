@@ -1,4 +1,4 @@
-package ir.drp.it.food;
+package ir.drp.it.foodiemoodie;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
