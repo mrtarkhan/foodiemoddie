@@ -32,6 +32,9 @@ public class User extends BaseEntity{
 
     @Enumerated(EnumType.ORDINAL)
     private UserRole Role;
+
+    private Integer numberOfAllowedGuess;
+
     //</editor-fold>
 
     //<editor-fold desc="ctors">
@@ -120,6 +123,15 @@ public class User extends BaseEntity{
     public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
     }
+
+    public Integer getNumberOfAllowedGuess() {
+        return numberOfAllowedGuess;
+    }
+
+    public void setNumberOfAllowedGuess(Integer numberOfAllowedGuess) {
+        this.numberOfAllowedGuess = numberOfAllowedGuess;
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="business methods">

@@ -19,7 +19,6 @@ public class Workday extends BaseEntity {
     private WorkDayType type;
 
     @ManyToOne
-    @JoinColumn(name = "monthId")
     private Month month;
 
 }

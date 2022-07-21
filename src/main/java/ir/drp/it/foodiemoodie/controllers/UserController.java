@@ -1,11 +1,14 @@
 package ir.drp.it.foodiemoodie.controllers;
 
 
+import ir.drp.it.foodiemoodie.entities.Product;
 import ir.drp.it.foodiemoodie.entities.User;
 import ir.drp.it.foodiemoodie.exceptions.BusinessException;
 import ir.drp.it.foodiemoodie.models.userModels.CreateUserModel;
 import ir.drp.it.foodiemoodie.repositories.UserRepository;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/user")
@@ -56,6 +59,10 @@ public class UserController {
 
     }
 
+    @RequestMapping(method = RequestMethod.GET)
+    public List<User> getAll() {
+        return userRepository.findAll();
+    }
 
 
 }

@@ -1,20 +1,21 @@
 package ir.drp.it.foodiemoodie.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapsId;
+import javax.persistence.OneToMany;
 
 @Entity
 public class ProductAvailability extends BaseEntity {
 
     @ManyToOne
-    @MapsId
     private Product product;
 
     @ManyToOne
-    @MapsId
     private Workday workday;
+
+
+    private Integer workdayId;
 
 
     public ProductAvailability(Product product, Workday workDay) {
