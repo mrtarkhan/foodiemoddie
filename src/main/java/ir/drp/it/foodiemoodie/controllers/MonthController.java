@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(path = "api/v1/months")
@@ -24,8 +25,8 @@ public class MonthController {
     public List<Workday> get(@PathVariable int id) {
         return monthRepository.findByYearMonth(id)
                 .getWorkdays()
-                .stream().toList()
-                ;
+                .stream()
+                .collect(Collectors.toList());
     }
 
 }
